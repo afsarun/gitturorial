@@ -1,0 +1,41 @@
+# Tools Pack — Online Utilities
+
+## 🌐 English
+1. [Home](https://tools-pack.netlify.app/)
+2. [JSON Formatter](https://tools-pack.netlify.app/json-formatter/)
+3. [Calculator](https://tools-pack.netlify.app/calculator/)
+4. [Unit Converter](https://tools-pack.netlify.app/unit-converter/)
+5. [Age Calculator](https://tools-pack.netlify.app/age-calculator/)
+6. [Text Utilities](https://tools-pack.netlify.app/text-utilities/)
+7. [Base64 Tools](https://tools-pack.netlify.app/base64/)
+8. [URL Tools](https://tools-pack.netlify.app/url-tools/)
+9. [Password & UUID Generator](https://tools-pack.netlify.app/password-uuid/)
+10. [UUID v4 Generator](https://tools-pack.netlify.app/uuid-v4/)
+11. [SHA-256 Hash Generator](https://tools-pack.netlify.app/sha256/)
+12. [Image Resizer / Compressor](https://tools-pack.netlify.app/image-resizer-compressor/)
+13. [Color Picker & Contrast Checker](https://tools-pack.netlify.app/color-picker-contrast/)
+14. [Stopwatch & Countdown](https://tools-pack.netlify.app/stopwatch-countdown/)
+15. [Quick Notes](https://tools-pack.netlify.app/quick-notes/)
+16. [Text → PDF Converter](https://tools-pack.netlify.app/text-to-pdf/)
+17. [Percent Calculator](https://tools-pack.netlify.app/percent-calculator/)
+
+---
+
+## 🇧🇩 বাংলা
+1. [হোম](https://tools-pack.netlify.app/bn/)
+2. [JSON ফরম্যাটার](https://tools-pack.netlify.app/bn/json-formatter/)
+3. [ক্যালকুলেটর](https://tools-pack.netlify.app/bn/calculator/)
+4. [ইউনিট কনভার্টার](https://tools-pack.netlify.app/bn/unit-converter/)
+5. [বয়স ক্যালকুলেটর](https://tools-pack.netlify.app/bn/age-calculator/)
+6. [টেক্সট টুলস](https://tools-pack.netlify.app/bn/text-utilities/)
+7. [Base64 টুলস](https://tools-pack.netlify.app/bn/base64/)
+8. [URL টুলস](https://tools-pack.netlify.app/bn/url-tools/)
+9. [পাসওয়ার্ড ও UUID জেনারেটর](https://tools-pack.netlify.app/bn/password-uuid/)
+10. [UUID v4 জেনারেটর](https://tools-pack.netlify.app/bn/uuid4/)
+11. [SHA-256 হ্যাশ জেনারেটর](https://tools-pack.netlify.app/bn/sha256/)
+12. [ইমেজ রিসাইজার / কমপ্রেসর](https://tools-pack.netlify.app/bn/image-resizer-compressor/)
+13. [কালার পিকার ও কনট্রাস্ট চেকার](https://tools-pack.netlify.app/bn/color-picker-contrast/)
+14. [স্টপওয়াচ ও কাউন্টডাউন](https://tools-pack.netlify.app/bn/stopwatch-countdown/)
+15. [দ্রুত নোটস](https://tools-pack.netlify.app/bn/quick-notes/)
+16. [টেক্সট → PDF কনভার্টার](https://tools-pack.netlify.app/bn/text-to-pdf/)
+17. [পার্সেন্ট ক্যালকুলেটর](https://tools-pack.netlify.app/bn/percent-calculator/)
