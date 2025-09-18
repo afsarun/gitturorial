@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Complete MA Divorce Firm | Massachusetts Family Law</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary-blue: #0c2a5a;
+        --deep-navy: #0a1f45;
+        --accent-yellow: #f7c500;
+        --sky-blue: #2d79ff;
+        --light-blue-bg: #f4f7fc;
+        --white: #ffffff;
+        --neutral-gray: #6c7a90;
+        --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        --radius-sm: 8px;
+        --radius-md: 10px;
+        --radius-lg: 12px;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        color: var(--primary-blue);
+        line-height: 1.6;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Oswald", sans-serif;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+        line-height: 1.2;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 12px 24px;
+        border-radius: var(--radius-md);
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        border: none;
+      }
+
+      .btn-primary {
+        background-color: var(--accent-yellow);
+        color: var(--deep-navy);
+      }
+
+      .btn-primary:hover {
+        background-color: #e6b700;
+        transform: translateY(-2px);
+        box-shadow: var(--shadow);
+      }
+
+      .btn-secondary {
+        background-color: var(--sky-blue);
+        color: var(--white);
+      }
+
+      .btn-secondary:hover {
+        background-color: #1f63da;
+        transform: translateY(-2px);
+        box-shadow: var(--shadow);
+      }
+
+      .btn-ghost {
+        background-color: transparent;
+        color: var(--white);
+        border: 1px solid var(--white);
+      }
+
+      .btn-ghost:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        transform: translateY(-2px);
+      }
+
+      section {
+        padding: 80px 0;
+      }
+
+      /* Header Styles */
+      header {
+        background: var(--white);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .top-bar {
+        background: linear-gradient(90deg, var(--deep-navy), transparent);
+        padding: 8px 0;
+        font-size: 14px;
+      }
+
+      .top-bar-content {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .phone-cta {
+        background-color: var(--sky-blue);
+        color: var(--white);
+        padding: 6px 16px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0;
+      }
+
+      .logo {
+        font-family: "Oswald", sans-serif;
+        font-size: 24px;
+        color: var(--primary-blue);
+        text-decoration: none;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 32px;
+        list-style: none;
+      }
+
+      .nav-links a {
+        color: var(--primary-blue);
+        text-decoration: none;
+        font-weight: 500;
+        position: relative;
+      }
+
+      .nav-links a:hover::after,
+      .nav-links a.active::after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: var(--sky-blue);
+      }
+
+      /* Hero Section */
+      .hero {
+        background: linear-gradient(
+            rgba(10, 31, 69, 0.7),
+            rgba(10, 31, 69, 0.7)
+          ),
+          url("https://placehold.co/1200x800") no-repeat center center/cover;
+        padding: 120px 0;
+        color: var(--white);
+        text-align: center;
+      }
+
+      .hero-content {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .kicker {
+        display: inline-block;
+        border: 1px solid var(--sky-blue);
+        color: var(--white);
+        padding: 6px 12px;
+        border-radius: var(--radius-sm);
+        margin-bottom: 16px;
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      .hero h1 {
+        font-size: 3.5rem;
+        margin-bottom: 24px;
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+        opacity: 0.8;
+        margin-bottom: 32px;
+      }
+
+      .cta-row {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+      }
+
+      /* About Section */
+      .about {
+        background-color: var(--white);
+      }
+
+      .about-content {
+        display: flex;
+        gap: 48px;
+        align-items: center;
+      }
+
+      .about-image {
+        flex: 1;
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+        box-shadow: var(--shadow);
+      }
+
+      .about-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .about-text {
+        flex: 1;
+      }
+
+      .about-text h2 {
+        font-size: 2.5rem;
+        margin-bottom: 16px;
+        color: var(--deep-navy);
+      }
+
+      .about-text p {
+        color: var(--neutral-gray);
+        margin-bottom: 24px;
+      }
+
+      /* Testimonials */
+      .testimonials {
+        background-color: var(--light-blue-bg);
+        text-align: center;
+      }
+
+      .testimonial-card {
+        background-color: var(--white);
+        border-radius: var(--radius-lg);
+        padding: 32px;
+        box-shadow: var(--shadow);
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .stars {
+        color: var(--accent-yellow);
+        font-size: 24px;
+        margin-bottom: 16px;
+      }
+
+      .testimonial-text {
+        font-size: 1.1rem;
+        font-style: italic;
+        margin-bottom: 24px;
+        color: var(--deep-navy);
+      }
+
+      .testimonial-author {
+        color: var(--neutral-gray);
+        font-weight: 600;
+      }
+
+      /* Confidence Banner */
+      .confidence-banner {
+        background-color: var(--sky-blue);
+        border-radius: var(--radius-lg);
+        padding: 40px;
+        color: var(--white);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .confidence-banner h3 {
+        font-size: 1.8rem;
+        max-width: 70%;
+      }
+
+      /* Practice Areas */
+      .practice-areas {
+        background-color: var(--white);
+      }
+
+      .section-header {
+        text-align: center;
+        margin-bottom: 48px;
+      }
+
+      .section-header h2 {
+        font-size: 2.5rem;
+        color: var(--deep-navy);
+        margin-bottom: 16px;
+      }
+
+      .section-header p {
+        color: var(--neutral-gray);
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .practice-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+      }
+
+      .practice-card {
+        background-color: var(--white);
+        border: 1px solid #e8edf6;
+        border-radius: var(--radius-lg);
+        padding: 24px;
+        text-align: center;
+        transition: all 0.3s ease;
+      }
+
+      .practice-card:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow);
+      }
+
+      .practice-card.highlight {
+        background-color: var(--accent-yellow);
+      }
+
+      .practice-icon {
+        font-size: 2rem;
+        margin-bottom: 16px;
+        color: var(--primary-blue);
+      }
+
+      .practice-card.highlight .practice-icon {
+        color: var(--deep-navy);
+      }
+
+      .practice-card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 12px;
+        color: var(--deep-navy);
+      }
+
+      .practice-card p {
+        color: var(--neutral-gray);
+      }
+
+      .practice-card.highlight p {
+        color: var(--deep-navy);
+      }
+
+      /* Footer */
+      footer {
+        background: linear-gradient(to bottom, var(--deep-navy), #081732);
+        color: var(--white);
+        padding: 80px 0 0;
+      }
+
+      .footer-content {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        gap: 48px;
+        margin-bottom: 48px;
+      }
+
+      .footer-logo {
+        font-family: "Oswald", sans-serif;
+        font-size: 1.8rem;
+        margin-bottom: 16px;
+      }
+
+      .footer-about {
+        color: var(--neutral-gray);
+        margin-bottom: 24px;
+      }
+
+      .social-links {
+        display: flex;
+        gap: 16px;
+      }
+
+      .social-link {
+        display: inline-block;
+        width: 36px;
+        height: 36px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        text-align: center;
+        line-height: 36px;
+        color: var(--white);
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+
+      .social-link:hover {
+        background-color: var(--sky-blue);
+      }
+
+      .footer-heading {
+        font-size: 1.2rem;
+        margin-bottom: 24px;
+        font-family: "Oswald", sans-serif;
+      }
+
+      .footer-links {
+        list-style: none;
+      }
+
+      .footer-links li {
+        margin-bottom: 12px;
+      }
+
+      .footer-links a {
+        color: var(--neutral-gray);
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+
+      .footer-links a:hover {
+        color: var(--sky-blue);
+      }
+
+      .copyright {
+        background-color: rgba(0, 0, 0, 0.2);
+        padding: 24px 0;
+        text-align: center;
+        color: var(--neutral-gray);
+        font-size: 0.9rem;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 1024px) {
+        .practice-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .footer-content {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .about-content {
+          flex-direction: column;
+        }
+
+        .confidence-banner {
+          flex-direction: column;
+          text-align: center;
+          gap: 24px;
+        }
+
+        .confidence-banner h3 {
+          max-width: 100%;
+        }
+
+        .hero h1 {
+          font-size: 2.5rem;
+        }
+
+        .cta-row {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .practice-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .footer-content {
+          grid-template-columns: 1fr;
+        }
+
+        .nav-links {
+          display: none; /* In a real implementation, this would be a mobile menu */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="top-bar">
+        <div class="container">
+          <div class="top-bar-content">
+            <a href="tel:+1234567890" class="phone-cta">
+              <span>📞</span> (123) 456-7890
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <nav>
+          <a href="#" class="logo">The Complete MA Divorce Firm</a>
+          <ul class="nav-links">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Practice Areas</a></li>
+            <li><a href="#">Attorneys</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#" class="btn btn-primary">Free Consultation</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="kicker">Massachusetts Family Law</div>
+          <h1>The Complete MA Divorce Firm</h1>
+          <p>
+            Expert legal representation for divorce and family law matters
+            throughout Massachusetts
+          </p>
+          <div class="cta-row">
+            <a href="#" class="btn btn-primary">Read Verified Reviews</a>
+            <a href="#" class="btn btn-secondary">Pay Your Retainer</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-image">
+            <img
+              src="https://placehold.co/500x600"
+              alt="Massachusetts Divorce Lawyer"
+            />
+          </div>
+          <div class="about-text">
+            <div
+              class="kicker"
+              style="
+                background-color: var(--sky-blue);
+                color: var(--white);
+                border: none;
+                margin-bottom: 16px;
+              "
+            >
+              Experienced Representation
+            </div>
+            <h2>Massachusetts Divorce Lawyer</h2>
+            <p>
+              With over 20 years of experience exclusively in family law, our
+              firm provides compassionate yet assertive representation for
+              clients navigating divorce, child custody, and other family law
+              matters. We understand the emotional and financial challenges you
+              face and are committed to achieving the best possible outcome for
+              your situation.
+            </p>
+            <a href="#" class="btn btn-primary">Schedule Consultation</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2>Client Testimonials</h2>
+          <p>
+            Hear what our clients have to say about their experience with our
+            firm
+          </p>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">
+            "The team at The Complete MA Divorce Firm guided me through the most
+            difficult time in my life with compassion and expertise. They were
+            always available to answer my questions and fought tirelessly for my
+            rights and my children."
+          </p>
+          <p class="testimonial-author">- Jennifer R., Boston</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Confidence Banner -->
+    <section>
+      <div class="container">
+        <div class="confidence-banner">
+          <h3>
+            We have successfully handled over 1,000 divorce cases in
+            Massachusetts
+          </h3>
+          <a href="#" class="btn btn-primary">Schedule a Consultation</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Practice Areas -->
+    <section class="practice-areas">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Practice Areas</h2>
+          <p>
+            Comprehensive legal services for all aspects of divorce and family
+            law
+          </p>
+        </div>
+        <div class="practice-grid">
+          <div class="practice-card">
+            <div class="practice-icon">⚖️</div>
+            <h3>Divorce</h3>
+            <p>
+              Full representation for contested and uncontested divorce
+              proceedings
+            </p>
+          </div>
+          <div class="practice-card">
+            <div class="practice-icon">🏢</div>
+            <h3>Business Divorce</h3>
+            <p>Protecting business interests during divorce proceedings</p>
+          </div>
+          <div class="practice-card highlight">
+            <div class="practice-icon">👨‍👩‍👧‍👦</div>
+            <h3>Child Support</h3>
+            <p>
+              Ensuring fair child support arrangements for your children's
+              wellbeing
+            </p>
+          </div>
+          <div class="practice-card">
+            <div class="practice-icon">🏠</div>
+            <h3>Property Division</h3>
+            <p>Equitable distribution of marital assets and property</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div>
+            <div class="footer-logo">The Complete MA Divorce Firm</div>
+            <p class="footer-about">
+              Providing expert legal representation for divorce and family law
+              matters throughout Massachusetts with compassion, integrity, and
+              results-driven advocacy.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link">f</a>
+              <a href="#" class="social-link">in</a>
+              <a href="#" class="social-link">tw</a>
+              <a href="#" class="social-link">ig</a>
+            </div>
+          </div>
+          <div>
+            <h4 class="footer-heading">Practice Areas</h4>
+            <ul class="footer-links">
+              <li><a href="#">Divorce</a></li>
+              <li><a href="#">Child Custody</a></li>
+              <li><a href="#">Child Support</a></li>
+              <li><a href="#">Alimony</a></li>
+              <li><a href="#">Property Division</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="footer-heading">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Attorneys</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="footer-heading">Contact Us</h4>
+            <ul class="footer-links">
+              <li>123 Main Street, Boston, MA 02110</li>
+              <li>(123) 456-7890</li>
+              <li>info@madivorcefirm.com</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="container">
+          &copy; 2023 The Complete MA Divorce Firm. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Simple interactive elements for demonstration
+      document.addEventListener("DOMContentLoaded", function () {
+        // Button hover effects
+        const buttons = document.querySelectorAll(".btn");
+        buttons.forEach((btn) => {
+          btn.addEventListener("mouseenter", function () {
+            this.style.transform = "translateY(-2px)";
+            this.style.boxShadow = "0 4px 8px rgba(0,0,0,0.1)";
+          });
+
+          btn.addEventListener("mouseleave", function () {
+            this.style.transform = "translateY(0)";
+            this.style.boxShadow = "none";
+          });
+        });
+
+        // Card hover effects
+        const cards = document.querySelectorAll(".practice-card");
+        cards.forEach((card) => {
+          card.addEventListener("mouseenter", function () {
+            this.style.transform = "translateY(-5px)";
+            this.style.boxShadow = "0 10px 30px rgba(0,0,0,0.08)";
+          });
+
+          card.addEventListener("mouseleave", function () {
+            this.style.transform = "translateY(0)";
+            this.style.boxShadow = "none";
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
